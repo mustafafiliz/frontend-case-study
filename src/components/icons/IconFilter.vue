@@ -1,0 +1,18 @@
+<template>
+  <svg
+    strokeWidth="2"
+    width="14"
+    height="14"
+    viewBox="0 0 14 14"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6.9708 4.6375L6.14597 5.46233L4.66663 3.983V11.6667H3.49997V3.983L2.0218 5.46233L1.1958 4.6375L4.0833 1.75L6.9708 4.6375ZM12.8041 9.3625L9.91663 12.25L7.02913 9.3625L7.85397 8.53767L9.33388 10.017L9.3333 2.33333H10.5V10.017L11.9793 8.53767L12.8041 9.3625Z"
+      :fill="fill"
+    />
+  </svg>
+</template>
+<script setup>
+const props = defineProps(['fill'])
+</script>

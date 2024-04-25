@@ -1,0 +1,364 @@
+{
+  "packages": [
+    {
+      "id": "cc28",
+      "name": "5 seans saç ekim",
+      "control": "5",
+      "duration": "20",
+      "durationUnit": "gün",
+      "price": "10000",
+      "currency": "TRY",
+      "status": 1,
+      "examination": "5",
+      "userIds": [
+        {
+          "id": "14",
+          "name": "Santana Leblanc",
+          "email": "santana_leblanc@gushkool.al",
+          "color": "#E7C3A8",
+          "photoUr": "https://i.pravatar.cc/128?u=6625e8d0b88f251f0ebf21af",
+          "createdAt": "2014-07-01T14:12:12.969Z",
+          "updatedAt": "2014-07-02T14:12:12.969Z"
+        },
+        {
+          "id": "15",
+          "name": "Valeria Bailey",
+          "email": "valeria_bailey@ultrimax.jp",
+          "color": "#73B0CD",
+          "photoUr": "https://i.pravatar.cc/128?u=6625e8d02746b804a3960a01",
+          "createdAt": "2013-09-06T21:33:58.325Z",
+          "updatedAt": "2013-09-07T21:33:58.325Z"
+        }
+      ]
+    },
+    {
+      "id": "a996",
+      "name": "10 seans saç ekim",
+      "control": "10",
+      "duration": "40",
+      "durationUnit": "gün",
+      "price": "20000",
+      "currency": "TRY",
+      "status": 1,
+      "examination": "10",
+      "userIds": [
+        {
+          "id": "14",
+          "name": "Santana Leblanc",
+          "email": "santana_leblanc@gushkool.al",
+          "color": "#E7C3A8",
+          "photoUr": "https://i.pravatar.cc/128?u=6625e8d0b88f251f0ebf21af",
+          "createdAt": "2014-07-01T14:12:12.969Z",
+          "updatedAt": "2014-07-02T14:12:12.969Z"
+        }
+      ]
+    },
+    {
+      "id": "48ad",
+      "name": "15 seans saç ekim",
+      "control": "1",
+      "duration": "150",
+      "durationUnit": "gün",
+      "price": "35000",
+      "currency": "TRY",
+      "status": 1,
+      "examination": "15",
+      "userIds": [
+        {
+          "id": "14",
+          "name": "Santana Leblanc",
+          "email": "santana_leblanc@gushkool.al",
+          "color": "#E7C3A8",
+          "photoUr": "https://i.pravatar.cc/128?u=6625e8d0b88f251f0ebf21af",
+          "createdAt": "2014-07-01T14:12:12.969Z",
+          "updatedAt": "2014-07-02T14:12:12.969Z"
+        },
+        {
+          "id": "11",
+          "name": "Wallace Holloway",
+          "email": "wallace_holloway@zentility.il",
+          "color": "#3F83F8",
+          "photoUr": "https://i.pravatar.cc/128?u=6625e8d00dcf6950550eac52",
+          "createdAt": "2010-11-11T23:42:27.112Z",
+          "updatedAt": "2010-11-12T23:42:27.112Z"
+        },
+        {
+          "id": "10",
+          "name": "Rhea Noel",
+          "email": "rhea_noel@cofine.claims",
+          "color": "#3F83F8",
+          "photoUr": "https://i.pravatar.cc/128?u=6625e8d091bc377612a7da0d",
+          "createdAt": "2014-08-22T07:18:41.769Z",
+          "updatedAt": "2014-08-23T07:18:41.769Z"
+        },
+        {
+          "id": "6",
+          "name": "Josefa Flores",
+          "email": "josefa_flores@zidox.hotmail",
+          "color": "#9B77E7",
+          "photoUr": "https://i.pravatar.cc/128?u=6625e8d0ac6495adbfee4841",
+          "createdAt": "2010-07-28T17:31:43.664Z",
+          "updatedAt": "2010-07-29T17:31:43.664Z"
+        },
+        {
+          "id": "3",
+          "name": "Hood Fuller",
+          "email": "hood_fuller@organica.cg",
+          "color": "#8FA5B2",
+          "photoUr": "https://i.pravatar.cc/128?u=6625e8d0b08564147a183091",
+          "createdAt": "2011-04-12T19:15:13.105Z",
+          "updatedAt": "2011-04-13T19:15:13.105Z"
+        }
+      ]
+    },
+    {
+      "id": "d219",
+      "name": "10 seans masaj",
+      "control": "5",
+      "duration": "20",
+      "durationUnit": "gün",
+      "price": "15000",
+      "currency": "TRY",
+      "status": 1,
+      "examination": "10",
+      "userIds": [
+        {
+          "id": "6",
+          "name": "Josefa Flores",
+          "email": "josefa_flores@zidox.hotmail",
+          "color": "#9B77E7",
+          "photoUr": "https://i.pravatar.cc/128?u=6625e8d0ac6495adbfee4841",
+          "createdAt": "2010-07-28T17:31:43.664Z",
+          "updatedAt": "2010-07-29T17:31:43.664Z"
+        },
+        {
+          "id": "4",
+          "name": "Robbins Craft",
+          "email": "robbins_craft@tri@tribalog.download",
+          "color": "#FD7D96",
+          "photoUr": "https://i.pravatar.cc/128?u=6625e8d0516a32104daf59fc",
+          "createdAt": "2012-06-18T04:30:38.272Z",
+          "updatedAt": "2012-06-19T04:30:38.272Z"
+        },
+        {
+          "id": "3",
+          "name": "Hood Fuller",
+          "email": "hood_fuller@organica.cg",
+          "color": "#8FA5B2",
+          "photoUr": "https://i.pravatar.cc/128?u=6625e8d0b08564147a183091",
+          "createdAt": "2011-04-12T19:15:13.105Z",
+          "updatedAt": "2011-04-13T19:15:13.105Z"
+        },
+        {
+          "id": "2",
+          "name": "Buchanan Shepard",
+          "email": "buchanan_shepard@medmex.technology",
+          "color": "#717EF1",
+          "photoUr": "https://i.pravatar.cc/128?u=6625e8d0dc30715eabf0f28c",
+          "createdAt": "2014-04-01T20:14:31.380Z",
+          "updatedAt": "2014-04-02T20:14:31.380Z"
+        },
+        {
+          "id": "7",
+          "name": "Sybil Franklin",
+          "email": "sybil_franklin@norsup.cbn",
+          "color": "#3F83F8",
+          "photoUr": "https://i.pravatar.cc/128?u=6625e8d0bf1e662e549afc66",
+          "createdAt": "2012-07-16T08:16:06.307Z",
+          "updatedAt": "2012-07-17T08:16:06.307Z"
+        }
+      ]
+    },
+    {
+      "id": "dc8b",
+      "name": "2 seans masaj",
+      "control": "1",
+      "duration": "5",
+      "durationUnit": "gün",
+      "price": "2000",
+      "currency": "TRY",
+      "status": 1,
+      "examination": "2",
+      "userIds": [
+        {
+          "id": "15",
+          "name": "Valeria Bailey",
+          "email": "valeria_bailey@ultrimax.jp",
+          "color": "#73B0CD",
+          "photoUr": "https://i.pravatar.cc/128?u=6625e8d02746b804a3960a01",
+          "createdAt": "2013-09-06T21:33:58.325Z",
+          "updatedAt": "2013-09-07T21:33:58.325Z"
+        }
+      ]
+    }
+  ],
+  "applied-packages": [
+    {
+      "id": "d159",
+      "startedAt": "2024-05-01",
+      "userId": "14",
+      "userName": "Santana Leblanc",
+      "packageId": "cc28",
+      "packageName": "5 seans saç ekim",
+      "examination": "5",
+      "control": "5",
+      "duration": "20",
+      "durationUnit": "gün",
+      "note": "paket değişikliği",
+      "price": "10000",
+      "currency": "TRY",
+      "leftExamination": 0,
+      "leftControl": 0
+    }
+  ],
+  "package-usages": [
+    {
+      "id": "d899",
+      "type": "Muayene",
+      "appliedPackageId": "d159",
+      "packageId": "a996",
+      "packageName": "10 seans saç ekim",
+      "userId": "14",
+      "userName": "Santana Leblanc",
+      "note": "ilk görüşme",
+      "usageAt": "2024-05-10T00:00:00.000Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Twila Ellison",
+      "email": "twila_ellison@slofast.study",
+      "color": "#E7C3A8",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d0a8abecd8e663eec8",
+      "createdAt": "2013-06-01T22:19:36.892Z",
+      "updatedAt": "2013-06-02T22:19:36.892Z"
+    },
+    {
+      "id": "2",
+      "name": "Buchanan Shepard",
+      "email": "buchanan_shepard@medmex.technology",
+      "color": "#717EF1",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d0dc30715eabf0f28c",
+      "createdAt": "2014-04-01T20:14:31.380Z",
+      "updatedAt": "2014-04-02T20:14:31.380Z"
+    },
+    {
+      "id": "3",
+      "name": "Hood Fuller",
+      "email": "hood_fuller@organica.cg",
+      "color": "#8FA5B2",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d0b08564147a183091",
+      "createdAt": "2011-04-12T19:15:13.105Z",
+      "updatedAt": "2011-04-13T19:15:13.105Z"
+    },
+    {
+      "id": "4",
+      "name": "Robbins Craft",
+      "email": "robbins_craft@tri@tribalog.download",
+      "color": "#FD7D96",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d0516a32104daf59fc",
+      "createdAt": "2012-06-18T04:30:38.272Z",
+      "updatedAt": "2012-06-19T04:30:38.272Z"
+    },
+    {
+      "id": "5",
+      "name": "Carla Levine",
+      "email": "carla_levine@shopabout.sr",
+      "color": "#E7C3A8",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d06ebccbdacfe60396",
+      "createdAt": "2011-02-02T13:15:58.443Z",
+      "updatedAt": "2011-02-03T13:15:58.443Z"
+    },
+    {
+      "id": "6",
+      "name": "Josefa Flores",
+      "email": "josefa_flores@zidox.hotmail",
+      "color": "#9B77E7",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d0ac6495adbfee4841",
+      "createdAt": "2010-07-28T17:31:43.664Z",
+      "updatedAt": "2010-07-29T17:31:43.664Z"
+    },
+    {
+      "id": "7",
+      "name": "Sybil Franklin",
+      "email": "sybil_franklin@norsup.cbn",
+      "color": "#3F83F8",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d0bf1e662e549afc66",
+      "createdAt": "2012-07-16T08:16:06.307Z",
+      "updatedAt": "2012-07-17T08:16:06.307Z"
+    },
+    {
+      "id": "8",
+      "name": "Coffey Hoover",
+      "email": "coffey_hoover@xiix.bs",
+      "color": "#898C6F",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d03dd9a29dc77593aa",
+      "createdAt": "2012-05-28T20:49:21.646Z",
+      "updatedAt": "2012-05-29T20:49:21.646Z"
+    },
+    {
+      "id": "9",
+      "name": "Landry Warren",
+      "email": "landry_warren@qimonk.wedding",
+      "color": "#0B698B",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d09446c24298b84e87",
+      "createdAt": "2013-07-17T00:44:55.383Z",
+      "updatedAt": "2013-07-18T00:44:55.383Z"
+    },
+    {
+      "id": "10",
+      "name": "Rhea Noel",
+      "email": "rhea_noel@cofine.claims",
+      "color": "#3F83F8",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d091bc377612a7da0d",
+      "createdAt": "2014-08-22T07:18:41.769Z",
+      "updatedAt": "2014-08-23T07:18:41.769Z"
+    },
+    {
+      "id": "11",
+      "name": "Wallace Holloway",
+      "email": "wallace_holloway@zentility.il",
+      "color": "#3F83F8",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d00dcf6950550eac52",
+      "createdAt": "2010-11-11T23:42:27.112Z",
+      "updatedAt": "2010-11-12T23:42:27.112Z"
+    },
+    {
+      "id": "12",
+      "name": "Sweet Curtis",
+      "email": "sweet_curtis@furnitech.li",
+      "color": "#73BFF3",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d077195cef5dfe095b",
+      "createdAt": "2012-02-01T10:50:06.154Z",
+      "updatedAt": "2012-02-02T10:50:06.154Z"
+    },
+    {
+      "id": "13",
+      "name": "Sharron Walton",
+      "email": "sharron_walton@virxo.nissan",
+      "color": "#7BC5C1",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d0249fe0543fca8f10",
+      "createdAt": "2011-05-30T18:48:06.430Z",
+      "updatedAt": "2011-05-31T18:48:06.430Z"
+    },
+    {
+      "id": "14",
+      "name": "Santana Leblanc",
+      "email": "santana_leblanc@gushkool.al",
+      "color": "#E7C3A8",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d0b88f251f0ebf21af",
+      "createdAt": "2014-07-01T14:12:12.969Z",
+      "updatedAt": "2014-07-02T14:12:12.969Z"
+    },
+    {
+      "id": "15",
+      "name": "Valeria Bailey",
+      "email": "valeria_bailey@ultrimax.jp",
+      "color": "#73B0CD",
+      "photoUr": "https://i.pravatar.cc/128?u=6625e8d02746b804a3960a01",
+      "createdAt": "2013-09-06T21:33:58.325Z",
+      "updatedAt": "2013-09-07T21:33:58.325Z"
+    }
+  ]
+}

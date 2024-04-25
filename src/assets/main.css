@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: #fafafaaf;
+}
+* {
+  outline: 0;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+
+input[type='date'] {
+  position: relative;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  color: transparent;
+  background: transparent;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* plugins */
+
+/* v-dropdown-menu */
+.v-dropdown-menu__container {
+  border-radius: 12px;
+  border-color: #d1d5db;
+  min-width: 180px !important;
+}
+/* v-dropdown-menu */
+
+/* vue-multiselect */
+.multiselect__tag,
+.multiselect__option--highlight {
+  background: #fffefe !important;
+}
+
+.multiselect__tag-icon::after,
+.multiselect__option--highlight,
+.multiselect__tag {
+  color: #202020 !important;
+  font-size: 12px;
+}
+.multiselect__option {
+  font-size: 12px;
+}
+.multiselect__option:after {
+  display: none;
+}
+.multiselect__tags {
+  padding: 4px 20px 0 20px !important;
+  min-height: 37px !important;
+  border-color: #d1d5da !important;
+  border-radius: 8px !important;
+}
+.multiselect__tags,
+.multiselect__tags input {
+  background: #f3f4f6 !important;
+}
+.multiselect {
+  min-height: 37px !important;
+}
+/* vue-multiselect */
+
+/* plugins */
