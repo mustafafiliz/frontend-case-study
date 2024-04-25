@@ -21,7 +21,7 @@
       <li>
         Paketler ve Uygulanan Paketler sayfasında ekleme, düzenleme, silme,
         arama, sayfalama ve sıralama yapılabiliyor. Paket hareketlerinde
-        sayfalama ve sıralama yapılabiliyor.
+        sayfalama ve sıralama ve silme yapılabiliyor.
       </li>
       <li>
         Uygulanmış Paketlerde Ekleme/düzenleme yaparken uzman seçildiğinde
