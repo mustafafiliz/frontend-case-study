@@ -29,6 +29,9 @@
         kullanımına göre kalan muayene ve kontrol hakları doğru gösteriliyor.
       </li>
       <li class="text-red-500">
+        Arama işlemlerinde 400 ms debounce uygulanıyor.
+      </li>
+      <li class="text-red-500">
         Uygulanmış Paketlerde Muayene ve Kontrol hakları dolduysa paket
         kullanamıyor. Aynı şekilde bitiş tarihi dolmuş ise paketi kullanamıyor.
       </li>
