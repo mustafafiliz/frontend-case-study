@@ -6,13 +6,20 @@
     <DialogContent
       class="data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[500px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white py-5 px-6 shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none z-[100]"
     >
-      <DialogTitle class="text-gray-900 font-medium m-0 text-xl border-b border-gray-200 pb-4">
-        {{ mode === 'update' ? 'Düzenle' : 'Paket Uygula' }}
+      <DialogTitle
+        class="text-gray-900 font-medium m-0 text-xl border-b border-gray-200 pb-4"
+      >
+        {{ mode === "update" ? "Düzenle" : "Paket Uygula" }}
       </DialogTitle>
-      <form @submit.prevent="handleSubmit" class="mt-4">
+      <form
+        @submit.prevent="handleSubmit"
+        class="mt-4 max-h-[70vh] overflow-y-auto"
+      >
         <div class="grid grid-cols-4 gap-4">
           <div class="col-span-4">
-            <label class="flex flex-col gap-2 text-sm font-medium text-gray-900">
+            <label
+              class="flex flex-col gap-2 text-sm font-medium text-gray-900"
+            >
               Uzman
               <select
                 :disabled="mode === 'update'"
@@ -33,7 +40,9 @@
             </label>
           </div>
           <div v-show="userPackages?.length > 0" class="col-span-4">
-            <label class="flex flex-col gap-2 text-sm font-medium text-gray-900">
+            <label
+              class="flex flex-col gap-2 text-sm font-medium text-gray-900"
+            >
               Paket Listesi
               <select
                 :key="userPackages"
@@ -61,7 +70,9 @@
           </div>
           <template v-if="formData.packageName.length > 0">
             <div class="col-span-2">
-              <label class="flex flex-col gap-2 text-sm font-medium text-gray-900">
+              <label
+                class="flex flex-col gap-2 text-sm font-medium text-gray-900"
+              >
                 Muayene Sayısı
                 <Input
                   disabled="true"
@@ -74,7 +85,9 @@
               </label>
             </div>
             <div class="col-span-2">
-              <label class="flex flex-col gap-2 text-sm font-medium text-gray-900">
+              <label
+                class="flex flex-col gap-2 text-sm font-medium text-gray-900"
+              >
                 Kontrol Sayısı
                 <Input
                   disabled="true"
@@ -87,7 +100,9 @@
               </label>
             </div>
             <div class="col-span-4">
-              <label class="flex flex-col gap-2 text-sm font-medium text-gray-900">
+              <label
+                class="flex flex-col gap-2 text-sm font-medium text-gray-900"
+              >
                 Paketin Geçerlilik Süresi
                 <div class="relative">
                   <Input
@@ -98,14 +113,18 @@
                     :value="formData.duration"
                     @change="(value) => (formData.duration = value)"
                   />
-                  <span class="absolute right-2 top-1/2 -translate-y-1/2 font-medium text-xs">
+                  <span
+                    class="absolute right-2 top-1/2 -translate-y-1/2 font-medium text-xs"
+                  >
                     {{ formData.durationUnit }}
                   </span>
                 </div>
               </label>
             </div>
             <div class="col-span-3">
-              <label class="flex flex-col gap-2 text-sm font-medium text-gray-900">
+              <label
+                class="flex flex-col gap-2 text-sm font-medium text-gray-900"
+              >
                 Ücret
                 <Input
                   disabled="true"
@@ -117,7 +136,9 @@
               </label>
             </div>
             <div class="col-span-1">
-              <label class="flex flex-col gap-2 font-medium text-sm text-gray-900">
+              <label
+                class="flex flex-col gap-2 font-medium text-sm text-gray-900"
+              >
                 Para Birimi
                 <select
                   disabled="true"
@@ -129,7 +150,9 @@
               </label>
             </div>
             <div class="col-span-4">
-              <label class="flex flex-col gap-2 font-medium text-sm text-gray-900">
+              <label
+                class="flex flex-col gap-2 font-medium text-sm text-gray-900"
+              >
                 Paket Başlangıç Tarihi
                 <div class="relative">
                   <input
@@ -149,7 +172,9 @@
               </label>
             </div>
             <div class="col-span-4">
-              <label class="flex flex-col gap-2 text-sm font-medium text-gray-900">
+              <label
+                class="flex flex-col gap-2 text-sm font-medium text-gray-900"
+              >
                 Paket Notu
                 <Input
                   type="text"
@@ -184,107 +209,132 @@
   </DialogPortal>
 </template>
 <script setup>
-import { DialogClose, DialogContent, DialogOverlay, DialogPortal, DialogTitle } from 'radix-vue'
-import IconClose from '@/components/icons/IconClose.vue'
-import IconCalendar from '@/components/icons/IconCalendar.vue'
-import Input from '@/components/ui/Input.vue'
-import { useUsersStore } from '@/stores/users'
-import { ref } from 'vue'
-import { storeToRefs } from 'pinia'
-import { toast } from 'vue3-toastify'
-import Button from '../ui/Button.vue'
-import { useAppliedPackagesStore } from '@/stores/applied-packages'
-import dayjs from 'dayjs'
+import {
+  DialogClose,
+  DialogContent,
+  DialogOverlay,
+  DialogPortal,
+  DialogTitle,
+} from "radix-vue";
+import IconClose from "@/components/icons/IconClose.vue";
+import IconCalendar from "@/components/icons/IconCalendar.vue";
+import Input from "@/components/ui/Input.vue";
+import { useUsersStore } from "@/stores/users";
+import { ref } from "vue";
+import { storeToRefs } from "pinia";
+import { toast } from "vue3-toastify";
+import Button from "../ui/Button.vue";
+import { useAppliedPackagesStore } from "@/stores/applied-packages";
+import dayjs from "dayjs";
 
-const props = defineProps(['closeDialog', 'data', 'mode'])
-const { getUsers } = useUsersStore()
-const { getPackagesByUser, createAppliedPackage, updateAppliedPackage } = useAppliedPackagesStore()
-const { users } = storeToRefs(useUsersStore())
+const props = defineProps(["closeDialog", "data", "mode"]);
+const { getUsers } = useUsersStore();
+const { getPackagesByUser, createAppliedPackage, updateAppliedPackage } =
+  useAppliedPackagesStore();
+const { users } = storeToRefs(useUsersStore());
 
-const userPackages = ref([])
-const loading = ref(false)
+const userPackages = ref([]);
+const loading = ref(false);
 const formData = ref({
-  startedAt: props.data?.startedAt ? dayjs(props.data.startedAt).format('YYYY-MM-DD') : '',
-  userId: props.data?.userId || '',
-  userName: props.data?.userName || '',
-  packageId: props.data?.packageId || '',
-  packageName: props.data?.packageName || '',
-  examination: props.data?.examination || '',
-  control: props.data?.control || '',
-  duration: props.data?.duration || '',
-  durationUnit: props.data?.durationUnit || '',
-  note: props.data?.note || '',
-  price: props.data?.price || '',
-  currency: props.data?.currency || ''
-})
+  startedAt: props.data?.startedAt
+    ? dayjs(props.data.startedAt).format("YYYY-MM-DD")
+    : "",
+  userId: props.data?.userId || "",
+  userName: props.data?.userName || "",
+  packageId: props.data?.packageId || "",
+  packageName: props.data?.packageName || "",
+  examination: props.data?.examination || "",
+  control: props.data?.control || "",
+  duration: props.data?.duration || "",
+  durationUnit: props.data?.durationUnit || "",
+  note: props.data?.note || "",
+  price: props.data?.price || "",
+  currency: props.data?.currency || "",
+});
 
 const reset = () => {
   formData.value = {
-    startedAt: '',
+    startedAt: "",
     userId: formData.value.userId,
     userName: formData.value.userName,
-    packageId: '',
-    packageName: '',
-    examination: '',
-    control: '',
-    duration: '',
-    durationUnit: '',
-    note: '',
-    price: '',
-    currency: ''
-  }
-}
+    packageId: "",
+    packageName: "",
+    examination: "",
+    control: "",
+    duration: "",
+    durationUnit: "",
+    note: "",
+    price: "",
+    currency: "",
+  };
+};
 
 const handleSubmit = async () => {
-  loading.value = true
+  loading.value = true;
 
   try {
-    if (props.mode === 'update') {
+    if (props.mode === "update") {
       const leftExamination =
-        props.data.packageId === formData.packageId ? props.data.leftExamination : 0
-      const leftControl = props.data.packageId === formData.packageId ? props.data.leftControl : 0
-      const payload = { ...formData.value, leftExamination, leftControl }
-      await updateAppliedPackage(props.data?.id, payload)
-      toast.success('Paket güncellendi.')
+        props.data.packageId === formData.packageId
+          ? props.data.leftExamination
+          : 0;
+      const leftControl =
+        props.data.packageId === formData.packageId
+          ? props.data.leftControl
+          : 0;
+      const payload = { ...formData.value, leftExamination, leftControl };
+      await updateAppliedPackage(props.data?.id, payload);
+      toast.success("Paket güncellendi.");
     } else {
       await createAppliedPackage({
         ...formData.value,
-        startedAt: new Date(formData.value.startedAt).toISOString()
-      })
-      toast.success('Paket eklendi.')
+        startedAt: new Date(formData.value.startedAt).toISOString(),
+      });
+      toast.success("Paket eklendi.");
     }
   } catch (error) {
-    toast.error('Beklenmedik bir hata meydana geldi.')
+    toast.error("Beklenmedik bir hata meydana geldi.");
   } finally {
-    loading.value = false
-    props.closeDialog()
+    loading.value = false;
+    props.closeDialog();
   }
-}
+};
 
 const handleUserChange = async (user) => {
   try {
-    if (props.mode === 'create') {
-      reset()
+    if (props.mode === "create") {
+      reset();
       formData.value = {
         ...formData.value,
         userId: user.id,
-        userName: user.name
-      }
+        userName: user.name,
+      };
     }
-    const data = await getPackagesByUser(user.id)
-    console.log(data)
-    userPackages.value = data
+    const data = await getPackagesByUser(user.id);
+    console.log(data);
+    userPackages.value = data;
   } catch (error) {
-    toast.error('Beklenmedik bir hata meydana geldi.')
-    return error
+    toast.error("Beklenmedik bir hata meydana geldi.");
+    return error;
   }
-}
+};
 
 const handlePackageChange = (id) => {
-  const selected = userPackages.value.find((item) => String(item.id) === String(id))
+  const selected = userPackages.value.find(
+    (item) => String(item.id) === String(id)
+  );
   if (selected) {
-    const { id, name, examination, control, duration, durationUnit, price, currency } = selected
-    console.log(id)
+    const {
+      id,
+      name,
+      examination,
+      control,
+      duration,
+      durationUnit,
+      price,
+      currency,
+    } = selected;
+    console.log(id);
     formData.value = {
       ...formData.value,
       userId: formData.value.userId,
@@ -295,12 +345,13 @@ const handlePackageChange = (id) => {
       control,
       duration,
       durationUnit,
-      note: '',
+      note: "",
       price,
-      currency
-    }
-  } else toast.error('Beklenmedik bir hata meydana geldi.')
-}
-props.mode === 'update' && handleUserChange({ id: props.data.userId, name: props.data.userName })
-getUsers()
+      currency,
+    };
+  } else toast.error("Beklenmedik bir hata meydana geldi.");
+};
+props.mode === "update" &&
+  handleUserChange({ id: props.data.userId, name: props.data.userName });
+getUsers();
 </script>

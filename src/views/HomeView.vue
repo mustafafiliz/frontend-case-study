@@ -32,6 +32,9 @@
         Arama işlemlerinde 400 ms debounce uygulanıyor.
       </li>
       <li class="text-red-500">
+        Tanımlanmış paketin durumu pasif ise Uygulanmış Paketlerde kullanamıyor.
+      </li>
+      <li class="text-red-500">
         Uygulanmış Paketlerde Muayene ve Kontrol hakları dolduysa paket
         kullanamıyor. Aynı şekilde bitiş tarihi dolmuş ise paketi kullanamıyor.
       </li>
